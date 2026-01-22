@@ -121,6 +121,8 @@ If you have VS Code:
 - Add user confirmation + booking form submission
 - Prevent selecting already-booked time slots
 - Add responsive layout improvements for mobile
+- Make it responsive
+- Improve form submition
 
 ---
 

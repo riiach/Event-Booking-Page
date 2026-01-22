@@ -4,6 +4,8 @@ A front-end event planning booking experience built with **HTML, CSS, and Vanill
 
 This project highlights strong fundamentals in DOM manipulation, state handling, and UI logic — without frameworks.
 
+Form Submition is not working at the moment!
+
 ---
 
 ## Live Website

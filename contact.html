@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <link rel="stylesheet" href="contact.css"/>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <a href="../Coding/index.html">Éclat Rosé</a>
+            </div>
+            <div class="links">
+                <a href="#" class="nav-contact">Contact</a>
+                <a href="../Coding/booking.html" class="book" id="booking_btn">Booking<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather" id="booking_hover"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="form">
+                <div class="namecard">
+                    <h1>ATELIER ROSE</h1>
+                    <P>
+                        ÉCLAT ROSE — EAST COAST <br>
+                        88 CARROLL STREET, 3RD FLOOR <br>
+                        BROOKLYN, NY 11231 <br>
+                        Phone: <a href="tel:+821067645238" class="anchor">(555) 016-3304</a><br>
+                        Email: <a href="mailto:hello@eclatrose.com" class="anchor">hello@eclatrose.com</a> <br>
+                    </P>
+                </div>
+                <form method="post" action="">
+                    <div class="name-label">
+                        <label for="name" class="name-label-content inside">What is your name / company name?</label>
+                    </div>
+                    <div class="name-input">
+                        <input class="name-input-content inside" id="name" name="name" type="text" placeholder="John Doe" required />
+                    </div>
+                    <div class="e-mail-label">
+                        <label for="e-mail" class="e-mail-label-content inside">What's your e-mail address?</label>
+                    </div>
+                    <div class="e-mail-input">
+                        <input class="e-mail-input-content inside" id="e-mail" name="e-mail" type="text" placeholder="johndoe@gmail.com" required/>
+                    </div>
+                    <div class="select-label">
+                        <label for="subject" class="select-label-content inside">What do you want to ask us about?</label>
+                    </div>
+                    <div class="select-input">
+                        <select name="subject" id="subject" class="select-input-content">
+                            <option value="" disabled selected hidden><i>Select one</i></option>
+                            <option value="1">Event planning</option>
+                            <option value="2">Venue rental</option>
+                            <option value="3">Hiring</option>
+                            <option value="4">Other</option>
+                        </select>
+                    </div>
+                    <div class="question-label">
+                        <label class="question-label-content inside" for="question-area" class="p2">Let us hear your question.</label>
+                    </div>
+                    <div class="question-input">
+                        <textarea class="question-input-content inside" name="question-area" id="question-area" rows="1" cols="100" placeholder="I have a question about..." required></textarea>
+                    </div>
+                    <div class="terms-and-conditions">
+                        <label class="terms-and-conditions-content inside">I accept the&nbsp;<a href="" class="anchor">terms and conditions</a></label><span class="inside"><input type="checkbox" class="inside"/></span>
+                    </div>
+                    <div class="send">
+                        <input class="send-content inside" type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+            <div class="img"></div>
+        </div>
+        <script src="contact.js"></script>
+    </body>
+</html>

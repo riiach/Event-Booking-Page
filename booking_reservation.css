@@ -1,0 +1,531 @@
+@font-face {
+    font-family: 'PPMuseum'; /* Choose a descriptive name for your font */
+    src: url('../Assets/PPMuseum-Light.otf') format('opentype'); /* Path to your font files */
+    font-weight: 300; /* Define font weight (e.g., normal, bold, 400, 700) */
+    font-style: normal; /* Define font style (e.g., normal, italic) */
+    font-display: swap; /* Optional: Controls how font loads and displays */
+  }
+  @font-face {
+    font-family: 'PPMuseum'; /* Choose a descriptive name for your font */
+    src: url('../Assets/PPMuseum-LightItalic.otf') format('opentype'); /* Path to your font files */
+    font-weight: 300; /* Define font weight (e.g., normal, bold, 400, 700) */
+    font-style: italic; /* Define font style (e.g., normal, italic) */
+    font-display: swap; /* Optional: Controls how font loads and displays */
+  }
+  @font-face {
+    font-family: 'PPMuseum'; /* Choose a descriptive name for your font */
+    src: url('../Assets/PPMuseum-Regular.otf') format('opentype'); /* Path to your font files */
+    font-weight: 400; /* Define font weight (e.g., normal, bold, 400, 700) */
+    font-style: normal; /* Define font style (e.g., normal, italic) */
+    font-display: swap; /* Optional: Controls how font loads and displays */
+  }
+  @font-face {
+    font-family: 'PPMuseum'; /* Choose a descriptive name for your font */
+    src: url('../Assets/PPMuseum-RegularItalic.otf') format('opentype'); /* Path to your font files */
+    font-weight: 400; /* Define font weight (e.g., normal, bold, 400, 700) */
+    font-style: italic; /* Define font style (e.g., normal, italic) */
+    font-display: swap; /* Optional: Controls how font loads and displays */
+  }
+  @font-face {
+    font-family: 'PPMuseum'; /* Choose a descriptive name for your font */
+    src: url('../Assets/PPMuseum-Ultrabold.otf') format('opentype'); /* Path to your font files */
+    font-weight: bold; /* Define font weight (e.g., normal, bold, 400, 700) */
+    font-style: 800; /* Define font style (e.g., normal, italic) */
+    font-display: swap; /* Optional: Controls how font loads and displays */
+  }
+  @font-face {
+    font-family: 'PPMuseum'; /* Choose a descriptive name for your font */
+    src: url('../Assets/PPMuseum-UltraboldItalic.otf') format('opentype'); /* Path to your font files */
+    font-weight: 800; /* Define font weight (e.g., normal, bold, 400, 700) */
+    font-style: italic; /* Define font style (e.g., normal, italic) */
+    font-display: swap; /* Optional: Controls how font loads and displays */
+  }   
+
+:root {
+  --primary-color: #FCF9F4;
+  --pink: #f9d7de;
+  --dark-grey: #1c1b19;
+}
+
+h1,
+.h1 {
+  font-family: 'PP Museum', sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+} /* title */
+
+h2,
+.h2 {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400; /* book */
+}
+
+h3,
+.h3 {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 530; /* medium */
+}
+
+.p1 {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200; /* thin */
+}
+
+.p2 {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400; /* book */
+}
+
+.p3 {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 530; /* medium */
+}
+
+.p4 {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 530; /* medium */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  background: white;
+  font-family: "PP Neue Montreal";
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+button:active {
+  text-decoration: underline;
+}
+
+fieldset {
+    border: none;
+    height: 50%;
+    /* outline: 1px solid yellow; */
+}
+
+input {
+    border: none;
+}
+
+.nav {
+  position: relative;
+  width: 100vw;
+  height: 8vh;
+  top: 0;
+  padding: 12px;
+  padding-left: clamp(12px, 4vw, 30px);
+  padding-right: clamp(12px, 4vw, 30px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+  background-color: var(--primary-color);
+  overflow-y: hidden;
+  border-bottom: 1px solid black;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.feather {
+  display: none;
+  vertical-align: middle;
+}
+
+.feather2 {
+    vertical-align: middle;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+}
+
+.logo a {
+  font-family: 'PP Museum';
+  font-size: 30px;
+  color: black;
+}
+
+.links .contact {
+  color: black;
+}
+
+.book {
+  background-color: black;
+  color: var(--primary-color);
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 20px;
+}
+
+.content {
+  width: 100vw;
+  height: 92vh;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.date-time-wrapper {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    /* outline: 1px solid blue; */
+}
+
+.type {
+    height: calc(92vh / 8);
+    /* outline: 1px solid red; */
+}
+
+.reservation-wrapper {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* outline: 1px solid turquoise; */
+}
+
+.reservation-wrapper h2 {
+    height: calc(92vh / 8);
+    display: flex;
+    align-items: end;
+    border-bottom: 1px solid var(--dark-grey);
+    padding-bottom: 10px;
+    /* outline: 1px solid salmon */
+}
+
+.reservation-wrapper .sub {
+    height: calc(92vh / 16);
+    display: flex;
+    align-items: end;
+    /* outline: 1px solid green; */
+}
+
+form {
+    height: calc(92vh / 16 * 11);
+    /* outline: 1px solid red; */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+fieldset p {
+  margin-bottom: 2%;
+}
+
+input {
+  width: 100%;
+}
+
+.box {
+    height: 65px;
+    width: 100%;
+    border: 1px solid var(--dark-grey);
+    margin-bottom: 2%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.phone-num-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box-a {
+    height: 65px;
+    width: 20%;
+    border: 1px solid var(--dark-grey);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.box-a select {
+  width: 100%;
+  border: none;
+}
+
+.box-b {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    width: 78%;
+    border: 1px solid var(--dark-grey);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-area {
+    height: calc(92vh / 8);
+    display: flex;
+    justify-content: center;
+    /* outline: 1px solid purple; */
+}
+
+.book-now-btn {
+  width: 160px;
+  height: 45px;
+  background-color: black;
+  color: white;
+  border-radius: 45px;
+}
+
+.calendar {
+    height: calc(92vh / 8 * 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* outline: 1px solid purple; */
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.months {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.months span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.months span::before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 20px;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  border-radius: 25px;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+}
+
+.months span:hover::before {
+  background-color: transparent;
+  border: 1px solid var(--dark-grey);
+}
+
+.months span:active::before {
+  background-color: var(--dark-grey);
+  border: 1px solid var(--dark-grey);
+}
+
+.months span:active {
+  color: white;
+}
+
+.weeks {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.weeks li {
+  width: calc(100% / 7);
+  text-align: center;
+}
+
+.days {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.days li {
+  position: relative;
+  height: auto;
+  width: calc(100% / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.days li::before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 25px;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  border-radius: 25px;
+  transform: translate(-50%, -50%);
+}
+
+.days li:hover::before {
+  border: 1px solid var(--dark-grey);
+}
+
+.days li.active {
+  color: white;
+}
+
+.days li.active::before {
+  background-color: #E43636;
+}
+
+.days li.active:hover::before {
+  border: 1px solid #E43636;
+}
+
+.days li.active:active::before {
+  border: 1px solid var(--dark-grey);
+}
+
+.days li.active.clicked::before {
+  border: 1px solid var(--dark-grey);
+}
+
+.days li.inactive{
+  color: #aaa;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.days li:active {
+  color: white;
+}
+
+.days li:active::before {
+  background-color: var(--dark-grey);
+}
+
+.days li.clicked {
+  color: white;
+}
+
+.days li.clicked::before {
+  background-color: var(--dark-grey);
+}
+
+.days li.booked {
+  color: #aaa;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.date-label {
+  justify-self: end;
+  align-self: start;
+}
+
+.time {
+  height: calc(92vh / 8 * 3);
+  /* outline: 1px solid yellow; */
+}
+
+.time ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline {
+  width: calc(100% / 4 - 10px);
+  height: 50px;
+  border: 1px solid var(--dark-grey);
+  color: var(--dark-grey);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline:hover {
+  background-color: var(--dark-grey);
+  color: white;
+}
+
+.timeline:active {
+  background-color: var(--dark-grey);
+  color: white;
+}
+
+.timeline.clicked {
+  background-color: var(--dark-grey);
+  color: white;
+}
+
+.timeline.booked {
+  color: #cccccc;
+  border: 1px solid #cccccc;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.none {
+  display: none;
+}
+
+.price {
+    height: calc(92vh / 8);
+    display: inline-block;
+    text-align: right;
+    padding-top: 10px;
+   /* outline: 1px solid green; */
+}
+
+.total-time {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reservation</title>
+        <link rel="stylesheet" href="booking_reservation.css"/>
+        <!-- GOogle Font Link for Icons -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="logo">
+                <a href="../Coding/index.html">Éclat Rosé</a>
+            </div>
+            <div class="links">
+                <a href="../Coding/contact.html" class="contact" id="contact_btn">Contact<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right" id="contact_hover"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                <a href="#" class="book" id="booking_btn">Booking<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FCF9F4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right" id="booking_hover"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="date-time-wrapper">
+                <div class="type">
+                    <h1>Type A</h1>
+                </div>
+                <div class="calendar">
+                    <div class="months p2">
+                        <span class="material-symbols-outlined" id="prev" style="font-size: 1.6rem;">chevron_left</span>
+                        <p class="current-date"></p>
+                        <span class="material-symbols-outlined" id="next" style="font-size: 1.6rem;">chevron_right</span>
+                    </div>
+                    <ul class="weeks p2">
+                        <li>sun</li>
+                        <li>mon</li>
+                        <li>tue</li>
+                        <li>wed</li>
+                        <li>thu</li>
+                        <li>fri</li>
+                        <li>sat</li>
+                    </ul>
+                    <ul class="days p2">
+                    </ul>
+                </div>
+                <div class="time">
+                    <ul class="times p2">
+                        <li class="none"></li>
+                        <li class="none"></li>
+                        <li class="none"></li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <p class=" date-label p2"></p>
+                    <div class="total-time"><p class=" time-label p2"></p><p class=" total-hours p2"></p></div>
+                    <p class="price-label p4"></p>
+                </div>
+            </div>
+            <div class="reservation-wrapper">
+                <h2>Reservation</h2>
+                <p class="p2 sub">* Required</p>
+                <form action="">
+                    <fieldset>
+                        <legend class="h3">Name *</legend>
+                        <p class="p2">Tell us the who's making the reservation.</p>
+                        <div class="box">
+                            <label for="last-name" class="h3">Last name *</label></br>
+                            <input type="text" name="name" id="last-name" placeholder="Doe" class="h2">
+                        </div>
+                        <div class="box">
+                            <label for="first-name" class="h3">First name *</label></br>
+                            <input type="text" name="name" id="first-name" placeholder="John" class="h2">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="h3">Contact Information *</legend>
+                        <p class="p2">We'll send you confirmation to this email address.</p>
+                        <div class="box">
+                            <label for="email" class="h3">Email adress *</label></br>
+                            <input type="email" name="contact" id="email" placeholder="johnDoe@gmail.com" class="h2">
+                        </div>
+                        <div class="phone-num-wrapper">
+                            <div class="box-a">
+                            <label for="country-code" class="h3">Country / region *</label>
+                            <select name="contact" id="country-code" class="h2">
+                                <option value="" class="h2" disabled selected hidden>+82</option>
+                            </select>
+                        </div>
+                        <div class="box-b">
+                            <input type="text" placeholder="Phone number *" class="h2">
+                        </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="btn-area">
+                    <button class="p3 book-now-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <script src="../Coding/countryCode.js"></script>
+        <script src="../Coding/booking_reservation.js"></script>
+        <script src="button.js"></script>
+    </body>
+</html>

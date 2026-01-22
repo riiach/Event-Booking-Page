@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Booking</title>
+        <link rel="stylesheet" href="booking.css"/>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="logo">
+                <a href="../Coding/index.html">Éclat Rosé</a>
+            </div>
+            <div class="links">
+                <a href="../Coding/contact.html" class="contact" id="contact_btn">Contact<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right" id="contact_hover"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                <a href="#" class="book" id="booking_btn">Booking<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FCF9F4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right" id="booking_hover"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+            </div>
+        </nav>
+        <div class="content">
+            <nav class="menu p">
+                    <button type="button" class="type-btn p" id="type1-btn">Type 1</button>
+                    <button type="button" class="type-btn p" id="type2-btn">Type 2</button>
+                    <button type="button" class="type-btn p" id="type3-btn">Type 3</button>
+            </nav>
+            <div class="title">
+                <h1 id="title">Venue Type A</h1>
+            </div>
+            <div class="reservation">
+                <a href="../Coding/booking_reservation.html"><button class="p">Make a reservation<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather2" id="booking_hover"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></button></a>
+            </div>
+            <div class="gallery">
+                <div class="img1" id="img1"></div>
+                <div class="img2" id="img2"></div>
+                <div class="img3" id="img3"></div>
+            </div>
+        </div>
+        <div class="mobile">
+            <button class="gallery-left" id="gallery-left"><svg width="70%" height="70%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <path d="M20 12H4M4 12L10 18M4 12L10 6" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+ </svg></button>
+            <button class="gallery-right" id="gallery-right"><svg width="70%" height="70%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+ </svg></button>
+        </div>
+        <script src="booking.js"></script>
+    </body>
+</html>

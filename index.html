@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Éclat Rosé</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <a href="#">Éclat Rosé</a>
+            </div>
+            <div class="links">
+                <a href="../Coding/contact.html" id="contact_btn">Contact<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right" id="contact_hover"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                <a href="../Coding/booking.html" class="book" id="booking_btn">Booking<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FCF9F4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right" id="booking_hover"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+            </div>
+        </nav>
+        <section class="lottie-container">
+            <div class="animation"></div>
+            <h2 class="main">
+                <span class="line1">CREATING ÉCLAT ROSÉ</span>
+                <span class="line2">MOMENTS BEYOND</span>
+                <button class="scroll-btn"><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
+            </h2>
+        </section>
+        <section class="gradient"></section>
+
+        <section class="website-content">
+            <div class="end-lottie"></div>
+            <div class="intro-container">
+                <div class="animation2"></div>
+                <div class="box2" id="box2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="feather2" id="box2-arrow"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    <p>TURN YOUR DREAM INTO REALITY</p>
+                    <img src="../Assets/pexels-itislit-2380681.jpg" alt="gallery" id="box2-img">
+                    <a id="box2-button">ISABEL LOUIS 2024<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="box2-arrow"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                </div>
+                <div class="box3">
+                    <img src="../Assets/discoBall.jpg" alt="gallery">
+                </div>
+                <div class="box4">
+                    <img src="../Assets/woman.jpg" alt="gallery" class="box4-img1">
+                    <img src="../Assets/cheers.jpg" alt="gallery" class="box4-img2">
+                </div>
+            </div>
+        </section>
+        
+        <section class="booking">
+            <div class="end-lottie2"></div>
+            <div class="intro">
+                <p>
+                    We craft luxury events that are as unforgettable as they are beautiful — tailored details, graceful design,<br> and a signature touch of rosé sophistication.<br>
+                    From intimate soirées to grand gatherings, Clat Rosé transforms your vision into moments <br> that linger long after the last toast.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-img"></div>
+            <div class="form-background"></div>
+            <div class="form-area">
+                <h2>Let's Talk</h2>
+                <h3>Reach out to us, feel free to ask any questions.</h3>
+                <form method="post" action="">
+                    <fieldset>
+                        <label for="name" class="p2">What is your name / company name?<br><input id="name" name="name" type="text" placeholder="John Doe" required /></label><br>
+                        <label for="e-mail" class="p2">What's your e-mail? <br><input id="e-mail" name="e-mail" type="text" placeholder="johndoe@gmail.com" required/></label><br>
+                        <label for="subject" class="p2">What do you want to ask us about?<br>
+                            <select name="subject" id="subject">
+                                <option value="" disabled selected hidden><i>Select one</i></option>
+                                <option value="1">Event planning</option>
+                                <option value="2">Venue rental</option>
+                                <option value="3">Hiring</option>
+                                <option value="4">Other</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                            <label for="question-area" class="p2">Let us hear your question. <br>
+                                <textarea name="question-area" id="question-area" rows="5" cols="30" placeholder="I have a question about..." required></textarea>
+                            </label>
+                    </fieldset>
+                    <label class="checkbox-container p2">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    I accept the&nbsp;<a href="">terms and conditions</a>
+                    </label><br>
+                    <div class="submit-wrapper">
+                        <input type="submit" value="Send" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="hover-arrow">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+        <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+        <script src="script.js"></script>
+        <script src="button.js"></script>
+    </body>
+</html>

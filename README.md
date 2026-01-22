@@ -8,14 +8,13 @@ This project highlights strong fundamentals in DOM manipulation, state handling,
 
 ## Live Website
 
-🔗 [https://your-live-site-link.com  ](https://red-beaver-489053.hostingersite.com/index.html)
+🔗 https://red-beaver-489053.hostingersite.com/index.html
 
 ---
 
 ## Preview
 
-![Event Planning Website Preview](./path-to-your-preview.png)  
-*(Replace with your screenshot path)*
+![Event Planning Website Preview](event_booking_main.png)  
 
 ---
 

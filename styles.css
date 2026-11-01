@@ -1,41 +1,41 @@
    @font-face {
       font-family: 'PPMuseum'; /* Choose a descriptive name for your font */
-      src: url('../Assets/PPMuseum-Light.otf') format('opentype'); /* Path to your font files */
+      src: url('assets/PPMuseum-Light.otf') format('opentype'); /* Path to your font files */
       font-weight: 300; /* Define font weight (e.g., normal, bold, 400, 700) */
       font-style: normal; /* Define font style (e.g., normal, italic) */
       font-display: swap; /* Optional: Controls how font loads and displays */
     }
     @font-face {
       font-family: 'PPMuseum'; /* Choose a descriptive name for your font */
-      src: url('../Assets/PPMuseum-LightItalic.otf') format('opentype'); /* Path to your font files */
+      src: url('assets/PPMuseum-LightItalic.otf') format('opentype'); /* Path to your font files */
       font-weight: 300; /* Define font weight (e.g., normal, bold, 400, 700) */
       font-style: italic; /* Define font style (e.g., normal, italic) */
       font-display: swap; /* Optional: Controls how font loads and displays */
     }
     @font-face {
       font-family: 'PPMuseum'; /* Choose a descriptive name for your font */
-      src: url('../Assets/PPMuseum-Regular.otf') format('opentype'); /* Path to your font files */
+      src: url('assets/PPMuseum-Regular.otf') format('opentype'); /* Path to your font files */
       font-weight: 400; /* Define font weight (e.g., normal, bold, 400, 700) */
       font-style: normal; /* Define font style (e.g., normal, italic) */
       font-display: swap; /* Optional: Controls how font loads and displays */
     }
     @font-face {
       font-family: 'PPMuseum'; /* Choose a descriptive name for your font */
-      src: url('../Assets/PPMuseum-RegularItalic.otf') format('opentype'); /* Path to your font files */
+      src: url('assets/PPMuseum-RegularItalic.otf') format('opentype'); /* Path to your font files */
       font-weight: 400; /* Define font weight (e.g., normal, bold, 400, 700) */
       font-style: italic; /* Define font style (e.g., normal, italic) */
       font-display: swap; /* Optional: Controls how font loads and displays */
     }
     @font-face {
       font-family: 'PPMuseum'; /* Choose a descriptive name for your font */
-      src: url('../Assets/PPMuseum-Ultrabold.otf') format('opentype'); /* Path to your font files */
+      src: url('assets/PPMuseum-Ultrabold.otf') format('opentype'); /* Path to your font files */
       font-weight: bold; /* Define font weight (e.g., normal, bold, 400, 700) */
       font-style: 800; /* Define font style (e.g., normal, italic) */
       font-display: swap; /* Optional: Controls how font loads and displays */
     }
     @font-face {
       font-family: 'PPMuseum'; /* Choose a descriptive name for your font */
-      src: url('../Assets/PPMuseum-UltraboldItalic.otf') format('opentype'); /* Path to your font files */
+      src: url('assets/PPMuseum-UltraboldItalic.otf') format('opentype'); /* Path to your font files */
       font-weight: 800; /* Define font weight (e.g., normal, bold, 400, 700) */
       font-style: italic; /* Define font style (e.g., normal, italic) */
       font-display: swap; /* Optional: Controls how font loads and displays */
@@ -423,7 +423,7 @@ nav a {
 .contact-img {
     width: 50%;
     height: 100%;
-    background-image: url(../Assets/contact-img.jpg);
+    background-image: url(assets/contact-img.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

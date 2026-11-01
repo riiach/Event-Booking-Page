@@ -34,23 +34,23 @@ bookingBtn.addEventListener('mouseleave', () => {
   const title = document.getElementById('title');
 
   type1Btn.addEventListener('click', () => {
-    img1.style.backgroundImage = 'url(../Assets/TypeA-1.jpg)';
-    img2.style.backgroundImage = 'url(../Assets/TypeA-2.jpg)';
-    img3.style.backgroundImage = 'url(../Assets/TypeA-3.jpg)';
+    img1.style.backgroundImage = 'url(assets/typeA-1.jpg)';
+    img2.style.backgroundImage = 'url(assets/typeA-2.jpg)';
+    img3.style.backgroundImage = 'url(assets/typeA-3.jpg)';
     title.innerText = 'Venue Type A'
   })
 
   type2Btn.addEventListener('click', () => {
-    img1.style.backgroundImage = 'url(../Assets/TypeB-1.jpg)';
-    img2.style.backgroundImage = 'url(../Assets/TypeB-2.jpg)';
-    img3.style.backgroundImage = 'url(../Assets/TypeB-3.jpg)';
+    img1.style.backgroundImage = 'url(assets/typeB-1.jpg)';
+    img2.style.backgroundImage = 'url(assets/typeB-2.jpg)';
+    img3.style.backgroundImage = 'url(assets/typeB-3.jpg)';
     title.innerText = 'Venue Type B'
   });
 
   type3Btn.addEventListener('click', () => {
-    img1.style.backgroundImage = 'url(../Assets/TypeC-1.jpg)';
-    img2.style.backgroundImage = 'url(../Assets/TypeC-2.jpg)';
-    img3.style.backgroundImage = 'url(../Assets/TypeC-3.jpg)';
+    img1.style.backgroundImage = 'url(assets/typeC-1.jpg)';
+    img2.style.backgroundImage = 'url(assets/typeC-2.jpg)';
+    img3.style.backgroundImage = 'url(assets/typeC-3.jpg)';
     title.innerText = 'Venue Type C'
   });
 

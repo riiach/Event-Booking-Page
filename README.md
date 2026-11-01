@@ -10,7 +10,7 @@ Form Submition is not working at the moment!
 
 ## Live Website
 
-🔗 https://red-beaver-489053.hostingersite.com/index.html
+🔗 https://event-booking-page-two.vercel.app/
 
 ---
 
